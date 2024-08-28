@@ -53,9 +53,9 @@ className="bg-sky-600 rounded-full w-2 h-2 dott"/><br/>
 <div className="relative sm:hidden bg-white w-[30px] h-[30px] menu">
   <TiThMenu className="p-0 w-full h-full" onClick={()=>setIsMenu(!IsMenu)}/>
     {IsMenu &&(
-      <motion.div animate={{x:-100}}
+      <motion.div animate={{x:-200}}
       transition={{duration:4}}
-     className="fixed bg-white w-full h-1/2" >
+     className="fixed bg-white w-full h-1/6" >
         <ul className="sm:flex flex-row gap-10 list-none">
       {navLinks.map((link)=>(
         <li key={link.id}>
