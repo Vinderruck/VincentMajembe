@@ -2,11 +2,12 @@ import React from 'react'
 import {motion} from 'framer-motion'
 import { vin,vin2} from '../assets';
 import { navLinks } from '../constatnst/const';
+import { SlideIn,fadeIn } from '../utility/motion';
 
 const Navbar = () => {
     return  (
 <nav>
-<motion.div  classNamae="logo" animation={{}}>
+<motion.div  classNamae="logo"   animate={{x:-10, x:10}} transition={{duration:6, repeat:Infinity}} variants={SlideIn("left", "tween", 0.2, 1)}>
  <img src={vin2} alt="vinlogo"/>
  <div className="flex">
 <motion.div   animate={{ rotate:240, x: -100, x:100 }}
@@ -34,7 +35,9 @@ className="bg-sky-600 rounded-full w-2 h-2 dott"/><br/>
 
 </div>
     </motion.div>
-    <motion.div className="justify-end">
+    <motion.div className="justify-end"   animate={{x:-50}}
+    transition={{duration:10}}
+    >
     <ul className="sm:flex flex-row gap-10 hidden list-none">
   {navLinks.map((link)=>(
     <li key={link.id}>
