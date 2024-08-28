@@ -10,7 +10,7 @@ const Navbar = () => {
 
   const [IsMenu, setIsMenu] = useState(false)
     return  (
-<nav className="flex justify-between items-center">
+<nav className="flex justify-between items-center bg-white opacity-85 h-auto">
 <motion.div  classNamae="logo"    variants={SlideIn("left", "tween", 0.2, 1)}>
  <img src={vin2} alt="vinlogo"/>
  <div className="flex">
@@ -55,11 +55,11 @@ className="bg-sky-600 rounded-full w-2 h-2 dott"/><br/>
     {IsMenu &&(
       <motion.div animate={{x:-200}}
       transition={{duration:4}}
-     className="fixed bg-white w-full h-1/6" >
-        <ul className="sm:flex flex-row gap-10 list-none">
+     className="fixed bg-white border-bg-sky-600 rounded-md w-full h-1/6" >
+        <ul className="sm:flex flex-row gap-10 mb-1 list-none">
       {navLinks.map((link)=>(
         <li key={link.id}>
-            <a href={`#${link.id}`} className="m-4 border-l-2 font-bold text-[18px] text-2xl text-bg-sky-600 hover:text-blue cursor-pointer regular">{link.title}</a>
+            <a href={`#${link.id}`} onClick={()=>[setIsMenu(false)]} className="m-6 border-l-2 font-extrabold text-[18px] text-2xl text-sky-600 hover:text-blue cursor-pointer regular">{link.title}</a>
         </li>
       ))}
     </ul></motion.div>
