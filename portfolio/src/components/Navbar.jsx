@@ -8,15 +8,32 @@ const Navbar = () => {
 <nav>
 <motion.div  classNamae="logo">
  <img src={vin2} alt="vinlogo"/>
-<motion.div  animation={{x:100}}
-transition={{duration:10 }}
-className="bg-black rounded-full w-3 h-3"/>
+ <div className="flex">
+<motion.div   animate={{ rotate:240, x: -100, x:100 }}
+  transition={{ repeat: Infinity, duration: 2,repeatType: "loop" }}
+className="bg-sky-600 rounded-full w-2 h-2 dott"/><br/><motion.div   animate={{ rotate:240, x: -100, x:100 }}
+transition={{ repeat: Infinity, duration: 2,repeatType: "loop" }}
+className="bg-sky-600 rounded-full w-2 h-2 dott"/>
+<motion.div   animate={{ rotate:240, x: -100, x:100 }}
+  transition={{ repeat: Infinity, duration: 2,repeatType: "loop" }}
+className="bg-sky-600 rounded-full w-2 h-2 dott"/><br/><motion.div   animate={{ rotate:240, x: -100, x:100 }}
+transition={{ repeat: Infinity, duration: 2,repeatType: "loop" }}
+className="bg-sky-600 rounded-full w-2 h-2 dott"/>
+<motion.div   animate={{ rotate:240, x: -100, x:100 }}
+  transition={{ repeat: Infinity, duration: 2,repeatType: "loop" }}
+className="bg-sky-600 rounded-full w-2 h-2 dott"/><br/><motion.div   animate={{ rotate:240, x: -100, x:100 }}
+transition={{ repeat: Infinity, duration: 2,repeatType: "loop" }}
+className="bg-sky-600 rounded-full w-2 h-2 dott"/>
+
+
+
+</div>
     </motion.div>
-    <motion.div>
+    <motion.div className="justify-end">
     <ul className="sm:flex flex-row gap-10 hidden list-none">
   {navLinks.map((link)=>(
     <li key={link.id}>
-        <a href={`#${link.id}`}>{link.title}</a>
+        <a href={`#${link.id}`} className="m-10 text-white">{link.title}</a>
     </li>
   ))}
 </ul>

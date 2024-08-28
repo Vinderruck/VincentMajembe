@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 
-body{background:white;}
+body{
+    background:black;
+}
 
 .logo{
     width:50%;
@@ -19,5 +21,9 @@ nav{
     justify-content:space-between;
     display:flex;
     align-items:center;
+
+}
+.dott{
+    margin-top:-1rem;
 
 }
