@@ -6,25 +6,29 @@ import { navLinks } from '../constatnst/const';
 const Navbar = () => {
     return  (
 <nav>
-<motion.div  classNamae="logo">
+<motion.div  classNamae="logo" animation={{}}>
  <img src={vin2} alt="vinlogo"/>
  <div className="flex">
 <motion.div   animate={{ rotate:240, x: -100, x:100 }}
   transition={{ repeat: Infinity, duration: 1,repeatType: "loop" }}
-className="bg-white rounded-full w-2 h-2 dott"/><br/><motion.div   animate={{ rotate:240, x: -100, x:100 }}
-transition={{ repeat: Infinity, duration: 1,repeatType: "loop" }}
 className="bg-white rounded-full w-2 h-2 dott"/>
+<br/>
 <motion.div   animate={{ rotate:240, x: -100, x:100 }}
   transition={{ repeat: Infinity, duration: 1,repeatType: "loop" }}
-className="bg-orange-600 rounded-full w-2 h-2 dott"/><br/><motion.div   animate={{ rotate:240, x: -100, x:100 }}
-transition={{ repeat: Infinity, duration: 1,repeatType: "loop" }}
-className="bg-orange-600 w-2 h-2 -full dott"/>
-<motion.div   animate={{ rotate:240, x: -100, x:100 }}
-  transition={{ repeat: Infinity, duration: 1,repeatType: "loop" }}
-className="bg-sky-600 rounded-full w-2 h-2 dott"/><br/>
+className="bg-orange-600 rounded-full w-2 h-2 dott"/>
 <motion.div   animate={{ rotate:240, x: -100, x:100 }}
 transition={{ repeat: Infinity, duration: 1,repeatType: "loop" }}
 className="bg-sky-600 rounded-full w-2 h-2 dott"/>
+<br/><motion.div   animate={{ rotate:240, x: -100, x:100 }}
+transition={{ repeat: Infinity, duration: 1,repeatType: "loop" }}
+className="bg-white rounded-full w-2 h-2 dott"/>
+<motion.div   animate={{ rotate:240, x: -100, x:100 }}
+transition={{ repeat: Infinity, duration: 1,repeatType: "loop" }}
+className="bg-orange-600 rounded-full w-2 h-2 -full dott"/>
+<motion.div   animate={{ rotate:240, x: -100, x:100 }}
+  transition={{ repeat: Infinity, duration: 1,repeatType: "loop" }}
+className="bg-sky-600 rounded-full w-2 h-2 dott"/><br/>
+
 
 
 
