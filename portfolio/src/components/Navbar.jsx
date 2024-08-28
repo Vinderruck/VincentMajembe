@@ -6,6 +6,7 @@ import { SlideIn,fadeIn } from '../utility/motion';
 import { TiThMenu } from "react-icons/ti";
 import About from './About';
 import Contact from './Contact';
+import Hero from './Hero';
 
 const Navbar = () => {
 
@@ -69,6 +70,7 @@ className="bg-sky-600 rounded-full w-2 h-2 dott"/><br/>
     )}
 </div>
      </nav>
+     <Hero/>
      <About/>
      <Contact/>
      </>
