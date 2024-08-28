@@ -4,15 +4,18 @@ import { vin,vin2} from '../assets';
 import { navLinks } from '../constatnst/const';
 import { SlideIn,fadeIn } from '../utility/motion';
 import { TiThMenu } from "react-icons/ti";
+import About from './About';
+import Contact from './Contact';
 
 const Navbar = () => {
 
 
   const [IsMenu, setIsMenu] = useState(false)
     return  (
-<nav className="flex justify-between items-center bg-white opacity-85 h-auto">
+      <>
+<nav className="z-3 flex justify-between items-center bg-white opacity-100 h-40">
 <motion.div  classNamae="logo"    variants={SlideIn("left", "tween", 0.2, 1)}>
- <img src={vin2} alt="vinlogo"/>
+ <img src={vin2} alt="vinlogo" className="mt-1 h-32 object-cover"/>
  <div className="flex">
 <motion.div   animate={{ rotate:240, x: -100, x:100 }}
   transition={{ repeat: Infinity, duration: 1,repeatType: "loop" }}
@@ -45,7 +48,7 @@ className="bg-sky-600 rounded-full w-2 h-2 dott"/><br/>
     <ul className="sm:flex flex-row gap-10 hidden list-none">
   {navLinks.map((link)=>(
     <li key={link.id}>
-        <a href={`#${link.id}`} className="m-4 border-l-2 font-bold text-[18px] text-2xl text-white hover:text-blue cursor-pointer regular">{link.title}</a>
+        <a href={`#${link.id}`} className="m-4 border-l-2 font-extrabold text-[18px] text-2xl text-sky-600 hover:text-blue cursor-pointer regular">{link.title}</a>
     </li>
   ))}
 </ul>
@@ -55,17 +58,20 @@ className="bg-sky-600 rounded-full w-2 h-2 dott"/><br/>
     {IsMenu &&(
       <motion.div animate={{x:-200}}
       transition={{duration:4}}
-     className="fixed bg-white border-bg-sky-600 rounded-md w-full h-1/6" >
+     className="fixed border-sky-600 bg-white rounded-md w-full h-1/6" >
         <ul className="sm:flex flex-row gap-10 mb-1 list-none">
       {navLinks.map((link)=>(
         <li key={link.id}>
-            <a href={`#${link.id}`} onClick={()=>[setIsMenu(false)]} className="m-6 border-l-2 font-extrabold text-[18px] text-2xl text-sky-600 hover:text-blue cursor-pointer regular">{link.title}</a>
+            <a href={`#${link.id}`} onClick={()=>[setIsMenu(false)]} className="m-7 p-1 font-extrabold text-[18px] text-2xl text-sky-600 hover:text-blue cursor-pointer regular">{link.title}</a>
         </li>
       ))}
     </ul></motion.div>
     )}
 </div>
      </nav>
+     <About/>
+     <Contact/>
+     </>
   )
 }
 
