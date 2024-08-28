@@ -50,8 +50,8 @@ className="bg-sky-600 rounded-full w-2 h-2 dott"/><br/>
   ))}
 </ul>
     </motion.div>
-<div className="absolute sm:hidden mx-0.5 mt-5 mr-5 w-[25px] h-[25px] menu">
-  <TiThMenu className="bg-white rounded:2xl w-full h-full"/>
+<div className="absolute sm:hidden bg-white mx-0.5 mt-7 mr-5 w-[35px] h-[35px] menu">
+  <TiThMenu className="p-1 w-full h-full"/>
 </div>
      </nav>
   )
