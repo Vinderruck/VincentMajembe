@@ -15,6 +15,21 @@ transition: {
 },
 }
 };
+export const staggertext =( staggerChildren, delayChildren)=>{
+    return{
+        hidden:{
+            x:-100,
+            opacity:0,
+        },
+        show:{
+            x:0,
+            opacity:1,
+            transition:{
+                staggerChildren: 0.3,
+            },
+        },
+    }
+}
 export const staggerContainer = (staggerChildren, delayChildren) => {
     return {
       hidden: {},

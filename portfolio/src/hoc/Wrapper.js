@@ -11,7 +11,7 @@ const Wrapper = (Component,IdName) =>
     viewport={{ once: true, amount: 0.25 }}
     className= " max-w-7xl mx-auto relative z-0"
   >
-        <span className='hash-span' id={idName}>&nbsp</span>
+        <span className='hash-span' id={IdName}>&nbsp;</span>
 
         <Component/>
         </motion.div>
