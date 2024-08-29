@@ -4,7 +4,7 @@
 
 
 body{
-    background:black;
+    background:rgba(0, 0, 255, 0.2);
 }
 
 .logo{
@@ -45,5 +45,9 @@ nav{
     width:90%;
     margin:1rem;
     max-width:95%;
-    background:white;
+    
+ }
+ .dot{
+margin-top:3rem;
+ 
  }
