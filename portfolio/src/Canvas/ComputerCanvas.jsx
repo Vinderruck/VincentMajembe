@@ -6,7 +6,7 @@ import CanvasLoader from './CanvasLoader';
  
 
 
-const Computers = ({ismobile}) => {
+const Computers = () => {
 
 
   const computer = useGLTF("./laptop/scene.gltf");
@@ -15,8 +15,8 @@ const Computers = ({ismobile}) => {
         <hemisphereLight intensity={0.15} groundColor='white' />
        <pointLight intensity={1} />
        <primitive object={computer.scene}
-       scale={ismobile ? 0.7 : 1.5}
-       position={ismobile ? [0, -3 , -2.2] : [0, -1.25, -1.5 ]}
+       scale={ 1.5}
+       position={ [0, -1.25, -1.5 ]}
         />
         <spotLight
         position={[-20, 50, 10]}
@@ -29,26 +29,7 @@ const Computers = ({ismobile}) => {
   )
 }
 const ComputerCanvas = () =>{
-  const [ismobile, setismobile] = useState(false);
-useEffect(() => {
- //add listener for changes in the screen
- const mediaquery = window.matchMedia('("max-width:500px")');
-
- //adding initial
- setismobile(mediaquery.matches)
- //add function that handle changes
- const handlechangemediaQuery = (event) =>{
-  setismobile(event.mediaquery)
- }
-
- // we are adding an event listener on the mediaquery
- mediaquery.addEventListener('change',handlechangemediaQuery);
-
-  return () => {
- //in this return we removing the eventListener
- mediaquery.removeEventListener('change',handlechangemediaQuery);
-  }
-}, [ ])
+   
   return (
   <Canvas
    frameloop="demand"
@@ -59,10 +40,9 @@ useEffect(() => {
      <Suspense fallback={null}>
         <OrbitControls
           enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
+         
         />
-        <Computers ismobile={ismobile}/>
+        <Computers/>
       </Suspense>
       <Preload All/>
   </Canvas>
