@@ -12,7 +12,7 @@ const Computers = () => {
   const computer = useGLTF("./laptop/scene.gltf");
   const ref =useRef()
   useFrame((state,delta)=>{
-    ref.current.rotation.y +=delta * 4;
+    ref.current.rotation.y +=delta * 1;
   })
   return (
      <mesh ref ={ref}>

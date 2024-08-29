@@ -7,7 +7,9 @@ import { TiThMenu } from "react-icons/ti";
 import About from './About';
 import Contact from './Contact';
 import Hero from './Hero';
-
+import Projects from './Projects';
+import Work from './Work';
+ 
 const Navbar = () => {
 
 
@@ -49,7 +51,7 @@ className="bg-sky-600 rounded-full w-2 h-2 dott"/><br/>
     <ul className="sm:flex flex-row gap-10 hidden list-none">
   {navLinks.map((link)=>(
     <li key={link.id}>
-        <a href={`#${link.id}`} className="m-4 border-l-2 font-extrabold text-[18px] text-2xl text-sky-600 hover:text-blue cursor-pointer regular">{link.title}</a>
+        <a href={`#${link.id}`} className="m-3 border-l-2 font-extrabold text-[18px] text-2xl text-sky-600 hover:text-blue cursor-pointer regular">{link.title}</a>
     </li>
   ))}
 </ul>
@@ -59,7 +61,7 @@ className="bg-sky-600 rounded-full w-2 h-2 dott"/><br/>
     {IsMenu &&(
       <motion.div animate={{x:-200}}
       transition={{duration:4}}
-     className="z-10 fixed border-sky-600 bg-white rounded-md w-full h-1/6" >
+     className="z-10 fixed border-sky-600 bg-white rounded-md w-full h-1/4" >
         <ul className="sm:flex flex-row gap-10 mb-1 list-none">
       {navLinks.map((link)=>(
         <li key={link.id}>
@@ -72,6 +74,8 @@ className="bg-sky-600 rounded-full w-2 h-2 dott"/><br/>
      </nav>
      <Hero/>
      <About/>
+ <Projects/>
+ <Work/>
      <Contact/>
      </>
   )
