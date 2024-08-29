@@ -39,4 +39,11 @@ nav{
    margin-right:0.9rem;
   
   }
- 
+ Canvas{
+    height:100vh;
+    border:1px solid white;
+    width:90%;
+    margin:1rem;
+    max-width:95%;
+    background:white;
+ }
