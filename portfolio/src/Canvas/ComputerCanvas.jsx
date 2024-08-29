@@ -9,15 +9,15 @@ import CanvasLoader from './CanvasLoader';
 const Computers = ({ismobile}) => {
 
 
-  const computer = useGLTF("./know/scene.gltf");
+  const computer = useGLTF("./laptop/scene.gltf");
   return (
      <mesh>
         <hemisphereLight intensity={0.15} groundColor='white' />
        <pointLight intensity={1} />
        <primitive object={computer.scene}
-       scale={ismobile ? 0.7 : 0.75}
-       position={ismobile ? [0, -3 , -2.2] : [0, -3.25, -1.5 ]}
-       rotation={[-0.01,-0.2,-0.1]}/>
+       scale={ismobile ? 0.7 : 1.5}
+       position={ismobile ? [0, -3 , -2.2] : [0, -1.25, -1.5 ]}
+        />
         <spotLight
         position={[-20, 50, 10]}
         angle={0.12}
