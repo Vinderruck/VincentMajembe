@@ -8,10 +8,10 @@ const Hero = () => {
   return (
     <div className="flex flex-col items-center text-centeter">
 
-<motion.div className="flex items-center opacity-70 mt-3 p-0 rounded w-2/4 justfy-between"
+<motion.div className="flex items-center opacity-70 mt-3 p-0 rounded w-2/4 hero justfy-between"
  animate={{ x:20}} transition={{duration:7}}>
     <div className="dot">
-  <motion.div  animate={{y:-20}} initial="hidden" whileInView="show" transition={{duration:2,repeat:Infinity, repeatType:"loop"}}className="bg-black mt-2 mr-1 rounded-full w-1 h-20"/>
+  <motion.div  animate={{y:-20}} initial="hidden" whileInView="show" transition={{duration:2,repeat:Infinity, repeatType:"loop"}}className="  bg-black mt-2 mr-1 rounded-full w-1 h-20"/>
   
   </div>
   <div className="flex flex-col">
