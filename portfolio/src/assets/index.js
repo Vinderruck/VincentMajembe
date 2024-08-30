@@ -8,10 +8,13 @@ import js from'./js.jpeg';
 import git from './git.jpeg';
 import css from './css.jpeg';
 import html from './html.jpeg';
-
+import digital from './digital.png';
+import Eye from './Eye.jpeg'
 
 
     export{vin,
+        Eye,
+        digital,
         html,
         css,
         git,

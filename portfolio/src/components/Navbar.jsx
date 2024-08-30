@@ -74,6 +74,7 @@ className="bg-sky-600 rounded-full w-2 h-2 dott"/><br/>
      </nav>
      <Hero/>
      <About/>
+     &nbsp;
  <Projects/>
  <Work/>
      <Contact/>

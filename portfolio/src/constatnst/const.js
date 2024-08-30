@@ -2,6 +2,7 @@
 
 import{
     html,
+    Eye,
     css,
     git,
     js,
@@ -9,6 +10,7 @@ import{
     sass,
     vin2, 
     three,
+    digital,
     tailwind} from '../assets';
 
  
@@ -33,7 +35,7 @@ export const navLinks = [
   ];
   
   //SKILL
-  export const skillicons =[
+  export const Skillicons =[
     {
        title:"React",
        icon:React,
@@ -66,3 +68,17 @@ export const navLinks = [
 ,        icon:css,   },
 
   ]
+  export const Projects =[
+{
+    title:"MV-Digital-Sacco",
+    image:digital,
+    github:"https://github.com/Vinderruck/Saccosystem",
+    giticon:git,
+    LiveEye:Eye,
+    Live:"https://mv-digital-sacco.netlify.app/",
+    Frontend:"Reactjs, Sass,Bootstrap,Html",
+    Backend:"Nodejs",
+    Description:"MV-Digital-Sacco is a innovative solution designed to modernize the management of local saving and credit cooperatives (Saccos). Our platform enables remote access to member records, auditing of loans and savings, loan tracking, and modernization of Sacco operations. Additionally, our platform offers a unique opportunity for Saccos to generate income through targeted advertisements."
+}
+  ]
+  
