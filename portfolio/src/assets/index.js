@@ -6,7 +6,7 @@ import  sass from './sass.png';
 import React from'./React.jpeg';
 import js from'./js.jpeg';
 import git from './git.jpeg';
-import css from './css.jpeg';
+import css from './CSS.jpeg';
 import html from './html.jpeg';
 import digital from './digital.png';
 import Eye from './Eye.jpeg'
