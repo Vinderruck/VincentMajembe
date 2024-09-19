@@ -18,7 +18,7 @@ const Hero = () => {
     <h1 className="flex flex-1 items-center m-3 p-3 font-bold text-[40px] text-black regular">
         <motion.span variants={staggertext()} initial="hidden" whileInView="show"  transition={{duration:5,delay:0.7}}>Hi Am &nbsp; 
          <span className="text-sky-900">Majembe </span></motion.span></h1>
-         <motion.p className="bg-sky-900 p-2 rounded-2xl text-[20px] text-white regular"> &nbsp;  &nbsp;A passionate front-end Developer</motion.p>
+         <motion.p className="bg-sky-900 p-2 rounded-2xl text-[20px] text-white regular"> &nbsp;  &nbsp;A passionate Full Stack Developer</motion.p>
          </div>
 </motion.div>
  &nbsp;
